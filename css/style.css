@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Press+Start+2P&display=swap');
+@font-face {
+    font-family: "PixelOperator";
+    src: url("../fonte/PixelOperator8.ttf");
+}
+@font-face {
+    font-family: "Pixel Emulator";
+    src: url("../fonte/Pixel Emulator.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: auto;
+    font-family: "Press Start 2P";
+    background-image: radial-gradient(ellipse 42% 250px, #2A1C40 20%, #020305 100%);
+}
+
+nav {
+    color: #5459AC;
+    font-family: "Pixel Emulator";
+    padding: 8px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    padding: 0;
+}
+
+ul li {
+    margin: 20px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: "Pixel Emulator";
+}
+
+ul li a:hover {
+    font-size: 1.2em;
+}
+
+ul li a:active {
+    font-size: 0.8em;
+    color: #5459AC;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+}
+
+.apresentacao {
+    margin: right;
+}
+
+.perfil img {
+    display: block;
+    margin-top: 50px;
+}
+
+.apresentacao h1 {
+    padding: 20px;
+    color: #648DB3;
+    font-size: 2.5em;
+}
+
+.apresentacao h2 {
+    margin-left: 60px;
+    color: #B2D8CE;
+    font-size: 1.5em;
+    font-family: "PixelOperator";
+} 
+
+.redes-sociais {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: -30px;
+    margin-left: -80px;
+}
+
+.redes-sociais a img {
+    width: 40px;
+    height: 40px;
+}
