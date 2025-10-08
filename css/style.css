@@ -91,3 +91,23 @@ ul li a:active {
     width: 40px;
     height: 40px;
 }
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 9vh;
+    background-color: black;
+    color: #B2D8CE;
+    align-items: center;
+    font: normal 0.9em "Press Start 2P";
+}
+
+#sobre h1 {
+    color: #5459AC;
+}
+
+#sobre p {
+    text-align: justify;
+    line-height: 20px;
+}
