@@ -1,0 +1,11 @@
+:root {
+    /* Tipografia */
+    --font-main: "Press Start 2P", system-ui;
+    --font-menu: "PixelOperator", monospace;
+    --font-detail: "Pixel Emulator", monospace;
+
+    /* Cores */
+    --color-primary: #5459AC;
+    --color-secondary: #B2D8CE;
+    --color-accent: #648DB3;
+}

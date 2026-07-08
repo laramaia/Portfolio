@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('constants.css');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Press+Start+2P&display=swap');
 @font-face {
     font-family: "PixelOperator";
@@ -16,20 +17,20 @@
 
 header {
     height: auto;
-    font-family: "Press Start 2P";
-    background-image: radial-gradient(ellipse 42% 250px, #2A1C40 20%, #020305 100%);
+    font-family: var(--font-main);
+    background-image: radial-gradient(ellipse 56% 30% at center 45%, #2A1C40 20%, #020305 100%);
 }
 
 nav {
-    color: #5459AC;
-    font-family: "Pixel Emulator";
+    color: var(--color-primary);
+    font-family: var(--font-menu);
     padding: 8px;
 }
 
 ul {
     display: flex;
     justify-content: center;
-    gap: 160px;
+    gap: 70px;
     padding: 0;
 }
 
@@ -39,8 +40,9 @@ ul li {
 
 ul li a {
     text-decoration: none;
+    color: inherit;
     font-size: 1.1em;
-    font-family: "Pixel Emulator";
+    font-family: var(--font-detail);
 }
 
 ul li a:hover {
@@ -49,7 +51,7 @@ ul li a:hover {
 
 ul li a:active {
     font-size: 0.8em;
-    color: #5459AC;
+    color: var(--color-primary);
 }
 
 .perfil {
@@ -68,15 +70,15 @@ ul li a:active {
 
 .apresentacao h1 {
     padding: 20px;
-    color: #648DB3;
+    color: var(--color-accent);
     font-size: 2.5em;
 }
 
 .apresentacao h2 {
     margin-left: 60px;
-    color: #B2D8CE;
+    color: var(--color-secondary);
     font-size: 1.5em;
-    font-family: "PixelOperator";
+    font-family: var(--font-detail);
 } 
 
 .redes-sociais {
@@ -95,19 +97,49 @@ ul li a:active {
 #sobre {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 60px;
     padding: 9vh;
     background-color: black;
-    color: #B2D8CE;
+    color: var(--color-secondary);
     align-items: center;
-    font: normal 0.9em "Press Start 2P";
+    font: normal 0.9em var(--font-main);
 }
 
 #sobre h1 {
-    color: #5459AC;
+    color: var(--color-primary);
 }
 
 #sobre p {
     text-align: justify;
     line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.sobre-container {
+    max-width: 70%;
+}
+
+#experiencia{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 9vh 16%;
+    background-color: black;
+    color: var(--color-accent);
+    align-items: center;
+    font: normal 0.9em var(--font-detail);
+    background: linear-gradient(180deg, #000000 40%, #2A1C40 100%);
+}
+
+#experiencia h1 {
+    color: var(--color-primary);
+}
+
+.experiencia-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    max-width: 80%;
+    font-size: 0.9em;
+    align-self: flex-start;
 }
