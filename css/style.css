@@ -103,6 +103,7 @@ ul li a:active {
     color: var(--color-secondary);
     align-items: center;
     font: normal 0.9em var(--font-main);
+    line-height: 35px;
 }
 
 #sobre h1 {
@@ -113,6 +114,7 @@ ul li a:active {
     text-align: justify;
     line-height: 20px;
     margin-bottom: 40px;
+    line-height: 35px;
 }
 
 .sobre-container {
@@ -127,12 +129,22 @@ ul li a:active {
     background-color: black;
     color: var(--color-accent);
     align-items: center;
-    font: normal 0.9em var(--font-detail);
+    font: normal 0.8em var(--font-menu);
     background: linear-gradient(180deg, #000000 40%, #2A1C40 100%);
+    line-height: 35px;
 }
 
 #experiencia h1 {
+    font-family: var(--font-detail);
     color: var(--color-primary);
+}
+
+#experiencia h2 {
+    font-size: 1.5em;
+}
+
+#experiencia h3 {
+    font-size: 1.2em;
 }
 
 .experiencia-container {
